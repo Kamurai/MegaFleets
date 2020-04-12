@@ -461,7 +461,7 @@ INSERT INTO [MegaFleets].dbo.StarterFleets (RaceId, UnitId, 				Quantity)
 VALUES (									13, 	ZinCho Mystic Breath, 	20);
 
 create table [MegaFleets].dbo.Discounts (
-	DiscountId			bigint IDENTITY(0,1) PRIMARY KEY, 
+	Bonus				bigint IDENTITY(0,1) PRIMARY KEY, 
 	RaceId				bigint, 
 	UnitId				bigint, 
 	FixedDiscountPrice	bigint, 
@@ -502,7 +502,7 @@ INSERT INTO [MegaFleets].dbo.Discounts (RaceId, 	UnitId, 					FixedDiscountPrice
 VALUES (								12, 		Xiron Force Coil, 			NULL, 				0, 					NULL, 				0, 					NULL, 				0);
 
 create table [MegaFleets].dbo.Bonuses (
-	BonusId				bigint IDENTITY(0,1) PRIMARY KEY, 
+	Bonus				bigint IDENTITY(0,1) PRIMARY KEY, 
 	RaceId				bigint, 
 	UnitId				bigint, 
 	PopulationGrowth	bigint,
